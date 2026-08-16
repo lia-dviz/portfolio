@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia's Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="https://lia-dviz.github.io/portfolio/" class="logo-container">
+                <img src="img/logo.jpeg" alt="Logo" class="site-logo">
+            </a>
+            <div class="search-bar-container">
+                <input type="text" id="project-search" placeholder="Search for a project, tag or...">
+                <div class="search-divider"></div>
+                <button class="search-icon-btn"><i class="ti ti-search"></i></button>
+            </div>
+        </div>
+        <div class="header-icons">
+            <a href="https://lia-dviz.github.io/Portfolio/"><i class="ti ti-folder-code"></i></a>
+            <a href="https://github.com/lia-dviz"><i class="ti ti-brand-github"></i></a>
+            <a href="mailto:lili.develop.work@gmail.com"><i class="ti ti-mail-plus"></i></a>
+            <a href="https://linkedin.com/in/lia-q"><i class="ti ti-brand-linkedin"></i></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="img/profile.png" alt="Lia" class="avatar">
+                <h2>Lia</h2>
+                <p class="bio">---- I'm a data technologist! Hope you enjoy looking around. Feel free to stay as long as
+                    you like!</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="ti ti-file-text stat-icon"></i>
+                        <span class="stat-num" id="project-count">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="ti ti-tag stat-icon"></i>
+                        <span class="stat-num" id="tag-count">0</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/lia-dviz" class="social-btn"><i class="ti ti-brand-github"></i>
+                        GitHub</a>
+                    <a href="mailto:lili.develop.work@gmail.com" class="social-btn"><i class="ti ti-mail"></i>
+                        E-Mail</a>
+                </div>
+            </div>
+            <div class="work-links">
+                <p><i class="ti ti-users"></i> Available for Work</p>
+                <a href="https://linkedin.com/in/lia-q" class="blog-link">See my resume</a>
+            </div>
+        </aside>
+
+        <section class="content">
+            <nav class="filter-nav">
+                <button class="filter-btn active" data-filter="all"><i class="ti ti-layout-grid"></i> Tudo (<span
+                        id="filter-all-count">0</span>)</button>
+                <button class="filter-btn" data-filter="business intelligence"><i class="ti ti-chart-bar"></i> Business
+                    Intelligence</button>
+                <button class="filter-btn" data-filter="javascript"><i class="ti ti-brand-javascript"></i>
+                    JavaScript</button>
+                <button class="filter-btn" data-filter="d3.js"><i class="ti ti-chart-dots"></i> D3.js</button>
+                <button class="filter-btn" data-filter="python"><i class="ti ti-brand-python"></i> Python</button>
+                <button class="filter-btn" data-filter="dbt"><i class="ti ti-database"></i> dbt</button>
+                <button class="filter-btn" data-filter="prefect"><i class="ti ti-cpu"></i> Prefect</button>
+                <button class="filter-btn" data-filter="sql"><i class="ti ti-database"></i> SQL</button>
+                <button class="filter-btn" data-filter="analytics"><i class="ti ti-chart-pie"></i> Analytics</button>
+            </nav>
+
+            <div class="project-gallery">
+                <article class="project-card" data-category="business intelligence javascript d3.js react">
+                    <div class="project-media">
+                        <img src="img/read.gif" alt="Reading Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/Reading-Dashboard/" target="_blank">[Dataviz] Reading
+                                Analytics Dashboard</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-chart-bar"></i> Business Intelligence</span>
+                            <span class="tag"><i class="ti ti-brand-javascript"></i> JavaScript</span>
+                            <span class="tag"><i class="ti ti-chart-dots"></i> D3.js</span>
+                            <span class="tag"><i class="ti ti-brand-react"></i> React</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="business intelligence javascript d3.js">
+                    <div class="project-media">
+                        <img src="img/cereal.gif" alt="Cereal Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/Cereal-Yield-vs-Fertilizer-Use-Dataviz/"
+                                target="_blank">[Dataviz] Cereal Yield vs Fertilizer Use</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-chart-bar"></i> Business Intelligence</span>
+                            <span class="tag"><i class="ti ti-brand-javascript"></i> JavaScript</span>
+                            <span class="tag"><i class="ti ti-chart-dots"></i> D3.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="javascript d3.js">
+                    <div class="project-media">
+                        <img src="img/prospects.gif" alt="World Population Prospects">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/World-Population-Prospects/" target="_blank">[Dataviz]
+                                World Population Prospects</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-brand-javascript"></i> JavaScript</span>
+                            <span class="tag"><i class="ti ti-chart-dots"></i> D3.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="dbt prefect python postgresql analytics">
+                    <div class="project-media">
+                        <img src="img/elt.gif" alt="ELT with PostgreSQL">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://github.com/lia-dviz/Anilist-Pipeline" target="_blank">[Analytics
+                                Engineering] ELT with PostgreSQL</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-database"></i> dbt</span>
+                            <span class="tag"><i class="ti ti-cpu"></i> Prefect</span>
+                            <span class="tag"><i class="ti ti-brand-python"></i> Python</span>
+                            <span class="tag"><i class="ti ti-server"></i> PostgreSQL</span>
+                            <span class="tag"><i class="ti ti-chart-pie"></i> Analytics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="fast-api dbt python prefect d3.js sql analytics">
+                    <div class="project-media">
+                        <img src="img/graph.gif" alt="Knowledge Graph Infrastructure">
+                    </div>
+                    <div class="project-info">
+                        <h3><span>[Analytics Engineering] Knowledge Graph Infrastructure</span></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-api"></i> fast-api</span>
+                            <span class="tag"><i class="ti ti-database"></i> dbt</span>
+                            <span class="tag"><i class="ti ti-brand-python"></i> python</span>
+                            <span class="tag"><i class="ti ti-cpu"></i> prefect</span>
+                            <span class="tag"><i class="ti ti-chart-dots"></i> d3.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="d3.js">
+                    <div class="project-media">
+                        <img src="img/global_housing.gif" alt="Global Housing Index Visualization">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/Global-Housing-Index/" target="_blank">[Dataviz] Global
+                                Housing Index Visualization</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-chart-dots"></i> d3.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="d3.js">
+                    <div class="project-media">
+                        <img src="img/map.gif" alt="Brazil Trade Flow Map">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/World-Trade-Flow/" target="_blank">[Dataviz] Brazil Trade Flow
+                                Map</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-chart-dots"></i> d3.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="d3.js">
+                    <div class="project-media">
+                        <img src="img/age.gif" alt="Brazil Trade Flow Map">
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="https://lia-dviz.github.io/Median-Age-by-Region/" target="_blank">[Dataviz] Median Age by Region Map</a></h3>
+                        <div class="tags">
+                            <span class="tag"><i class="ti ti-chart-dots"></i> d3.js</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="about-me" class="about-footer">
+        <div class="footer-content">
+            <h2>About Me</h2>
+            <p>Hello and welcome! Spending time in tech, I've
+                learned that my best growth happens when I give myself permission to explore and experiment, letting
+                ideas grow, tending to them when inspiration strikes, and sharing my results along the way.</p>
+            <p>I am available for remote work, I work with a pretty wide mix of technologies. I usually sit right at the
+                intersection of data engineering and visualization, web development, UI/UX, and analytics - essentially
+                a full-stack generalist.</p>
+            <p>Hope you enjoy looking around. Feel free to stay as long as you like!</p>
+            <div class="about-social-icons">
+                <a href="https://github.com/lia-dviz"><i class="ti ti-brand-github"></i></a>
+                <a href="mailto:lili.develop.work@gmail.com"><i class="ti ti-mail-plus"></i></a>
+                <a href="https://linkedin.com/in/lia-q"><i class="ti ti-brand-linkedin"></i></a>
+                <a href="https://lia-dviz.github.io/portfolio/" target="_blank" title="Blog"><i class="ti ti-folder-code"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
