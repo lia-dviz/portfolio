@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lili's Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/avatar.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+    <div id="cxo-intro-nav">
+        <section>
+            <div class="intro-nav-title">
+                <a href="https://lia-dviz.github.io/portfolio/">Lili's Portfolio</a>
+            </div>
+            <div class="intro-nav-label-box">
+                <a href="#" onclick="showSection('home')">Home</a>
+                <a href="#" onclick="showSection('about')">About Me</a>
+                <a href="mailto:lili.develop.work@gmail.com">Contact</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="cxo-profile">
+        <div class="profile-avatar">
+            <img src="assets/images/avatar.jpeg" alt="profile">
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="cxo-profile-inner">
+            <div class="profile-name">Lili</div>
+            <div class="tech">
+                <span>Data Engineering</span><br>
+                <span>Data Analytics & BI</span><br><br>
+                <span>Rust 🦀, Python 🐍 and JS 💻</span><br>
+            </div>
+        </div>
+    </div>
+
+    <div id="cxo-intro">
+        <h1>Lili's Portfolio</h1>
+        <h5>Hello and welcome! Spending time in tech, I've learned that my best growth happens when I give myself permission to explore and experiment, so I'm sharing my results along the way. Hope you enjoy looking around.</h5>
+        <div class="intro-social">
+            <a href="mailto:lili.develop.work@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/lia-dviz" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/lia-q" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://lia-dviz.github.io/portfolio/" title="Website"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </div>
+
+    <div id="cxo-content-outer">
+        <div id="cxo-content-inner">
+            <div id="home-section">
+                <div id="recent-posts"></div>
+            </div>
+
+            <div id="about-section" style="display: none;">
+                <div id="recent-posts">
+                    <article class="recent-post-item">
+                        <div class="post-title"><a href="#">About Me</a></div>
+                        <div class="post-content">
+                            <p class="recent-post-abstract about-text-spacing">
+                                Hello there 👋 <strong>Lili</strong> here!<br>
+                                Data Engineering and BI, Freelance 👩‍💻<br>
+                                Like all kinds of <del>weird</del> kawaii things and drinking tea 🍵<br>
+                                Usually using JavaScript for dataviz and Python for backend and data pipelines ⚙️<br><br>
+                                My day-to-day professional work revolves heavily around standard business intelligence tools, data warehousing, and structuring dashboards. On the engineering side, I build and automate end-to-end data architectures, handling real-time ingestion, API connections, and transforming raw records into reliable layers through robust ETL/ELT pipelines, while also relying on Python to shape clean backend logic and manage orchestration flows.<br><br>
+                                Whenever I want complete creative freedom, I craft custom web applications and interactive data visualizations from scratch using JavaScript, D3.js, and React.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="cxo-page-nav">
+                <span class="page-number current">1</span>
+            </div>
+        </div>
+    </div>
+
+    <footer id="cxo-footer-outer">
+        <p>Theme inspired by <a>Hexo</a> and adapted from <a>CXO Theme</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
