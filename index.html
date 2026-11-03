@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia's Blog</title>
+    <link rel="icon" type="image/png" href="assets/icons/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+    <header id="site-header">
+        <div class="header-container">
+            <div class="site-title">
+                <a href="#" onclick="showSection('home'); return false;">
+                    <img src="assets/icons/logo.png" alt="Lia's Blog Logo">Lia's Blog
+                </a>
+            </div>
+            <nav class="site-nav">
+                <a href="#" onclick="showSection('home'); return false;">Home</a>
+                <a href="#" onclick="showSection('about'); return false;">About</a>
+                <div class="search-box-wrapper">
+                    <input type="text" id="search-input" placeholder="Search posts..." oninput="handleSearch(this.value)">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="index-bg-banner">
+        <div class="banner-content">
+            <p>Hello and welcome! Spending time building systems with Rust, crafting pipelines and backends with Python, and
+                creating web data visualizations using JavaScript and React has taught me that my best growth happens when
+                I give myself permission to explore and experiment. I hope you enjoy looking around.</p>
+            <div class="banner-socials-box">
+                <a class="social-arrow" title=""><i class="fa-solid fa-chevron-left"></i></a>
+
+                <a href="mailto:lili.develop.work@gmail.com" title="Email" class="icon-email-img">
+                    <img src="assets/icons/mail.png" alt="Email">
+                </a>
+
+                <a href="https://github.com/lia-dviz" target="_blank" title="GitHub" class="icon-github-img">
+                    <img src="assets/icons/github.png" alt="GitHub">
+                </a>
+
+                <a class="social-arrow" title=""><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-layout">
+        <main id="content-area">
+            <div id="home-section">
+                <div id="recent-posts"></div>
+            </div>
+
+            <div id="about-section" style="display: none;">
+                <div id="about-posts">
+                    <article class="recent-post-item">
+                        <div class="post-title"><a href="#">About Me</a></div>
+                        <div class="post-content">
+                            <p class="about-text-spacing">
+                                Hello there 👋 <strong>Lili</strong> here!<br>
+                                Usually using JavaScript for dataviz and Python for backend and data pipelines
+                                <br><br>
+                                My day-to-day professional work revolves heavily around standard business intelligence
+                                tools, data warehousing, and structuring dashboards. On the engineering side, I build
+                                and automate end-to-end data architectures, handling real-time ingestion, API
+                                connections, and transforming raw records into reliable layers through ETL/ELT
+                                pipelines, while also relying on Python to shape backend logic and manage
+                                orchestration flows. Whenever I want complete creative freedom, I craft custom web applications and
+                                interactive data visualizations from scratch using JavaScript, D3.js, and React.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <aside id="sidebar-right">
+            <div class="widget widget-about">
+                <div class="sidebar-avatar">
+                </div>
+                <div class="sidebar-author-name">Hi! I'm Lia</div>
+                <div class="sidebar-tech-info">
+                    <span>Rust 🦀, Python 🐍 & JS 💻</span>
+                </div>
+            </div>
+
+            <div class="widget widget-socials">
+                <a href="mailto:lili.develop.work@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/lia-dviz" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/lia-q" target="_blank" title="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://lia-dviz.github.io/portfolio/" target="_blank" title="Website"><i
+                        class="fa-solid fa-rss"></i></a>
+            </div>
+
+            <div class="widget widget-tags">
+                <h3 class="widget-title">Tags</h3>
+                <div id="sidebar-tag-list"></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="cxo-footer-outer">
+        <p>Made by Lia, 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/autoload.js" />
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <div id="live2d-container">
+        <canvas id="live2d-canvas"></canvas>
+        <div id="live2d-speech-bubble" class="speech-bubble">Hi! Looking for a data developer?</div>
+    </div>
+
+    <button id="back-to-top" title="Back to Top">
+        <img src="assets/icons/up.png" alt="Top">
+    </button>
+
+</body>
+
+</html>
